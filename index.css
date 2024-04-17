@@ -1,0 +1,38 @@
+.bold-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0069d9;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.service-option {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.subsection-header {
+  margin-top: 40px;
+}
+
+.img-container {
+  margin-top: 20px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (min-width: 768px) {
+  .img-container img {
+    max-width: 50%;
+  }
+}
+
+/* Add margin after the "Contact Me" button */
+#contact {
+  margin-bottom: 50px; /* Adjust the value as needed */
+}

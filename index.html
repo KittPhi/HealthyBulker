@@ -12,6 +12,7 @@
 
     <!-- Custom CSS -->
     <style>
+      /* Custom CSS styles */
       .bold-text {
         font-weight: bold;
         font-size: 18px;
@@ -32,92 +33,116 @@
 
       .img-container {
         margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
+      .img-container a,
       .img-container img {
         max-width: 100%;
         height: auto;
+        margin-bottom: 10px;
+        margin-right: 10px; /* Add margin between images */
+        padding: 5px; /* Add padding around images */
       }
 
-      /* Media query for smaller screens */
+      /* Make images smaller on larger devices */
       @media (min-width: 768px) {
+        .img-container a,
         .img-container img {
-          max-width: 50%;
+          max-width: 45%;
         }
       }
 
-      /* Add margin after the "Contact Me" button */
-      #contact {
-        margin-bottom: 50px; /* Adjust the value as needed */
+      /* Custom spacing */
+      .section-spacing {
+        margin-bottom: 40px;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Healthy Bulker</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">My Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Healthy Bulker</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">My Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
+    <!-- Main Content -->
     <main class="container mt-4">
-      <section id="home" class="section-header">
+      <!-- Home Section -->
+      <section id="home" class="section-header section-spacing">
         <h2>Healthy Bulker</h2>
         <p class="bold-text">
-          Are you a man over 40 wanting to gain muscle and lose fat naturally?
+          Are you a man over 30 who is finding it challenging to build muscle
+          and shed fat?
         </p>
-
         <p>
-          To get a result, you need to know the formula! It's simple as that! If
-          you have the recipe! Instead of guessing, learn from a natural body
-          builder who has applied theories and gotten the results! I will teach
-          you how I was able to loose 8 lbs of Fat and gain 14.5 lbs of muscle
-          in just 7 weeks. And I'm really just getting started. Let me share
-          with you how I've been able to continuously do so.
+          To achieve specific results, it's crucial to understand why you're
+          getting the current results and then correct them by applying the
+          appropriate formula! If you're concerned about suboptimal testosterone
+          or HGH levels, addressing these issues naturally is my top
+          recommendation. I can show you how I optimize my levels. There are
+          five key elements that we must ensure you're incorporating, and by
+          doing so, I can guarantee you'll experience immediate improvements.
+          Not only will you look better, but you'll also feel better. Instead of
+          relying on guesswork, learn from a natural bodybuilder who, at 49
+          years old, has successfully applied theories and achieved tangible
+          results! I will guide you through how I managed to lose 8 lbs of fat
+          and gain 14.5 lbs of muscle in just seven weeks. At that time, my goal
+          was to maintain a level of leanness while maximizing muscle gain. Let
+          me share with you how I've consistently achieved these results.
         </p>
-
         <p class="bold-text">
-          Have you tried all the popular fads like Intermittent Fasting,
-          Carnivor Diet, or Keto and have not been able to gain muscle?
+          Have you experimented with popular trends such as Intermittent
+          Fasting, Carnivore Diet, or Keto without achieving your desired muscle
+          gain?
         </p>
-
         <p>
-          Discover proven methods and theories that I have applied successfully.
-          Learn from my trials and errors to achieve your fitness goals.
+          Explore proven methods and theories that I've successfully applied.
+          Benefit from my experiences, learning from both successes and setbacks
+          to reach your fitness goals.
         </p>
+        <div class="img-container">
+          <a href="2-23-2024-original.jpeg">2-23-2024</a>
+          <img src="2-23-2024.jpeg" alt="Image 1: 2-23-2024" />
+        </div>
 
         <div class="img-container">
-          <p><a href="2-23-2024-original.jpeg">2-23-2024</a></p>
-          <img src="2-23-2024.jpeg" alt="Image 1" />
-          <p><a href="4-12-2024-original.jpeg">4-12-2024</a></p>
-          <img src="4-12-2024.jpeg" alt="Image 2" />
+          <a href="4-12-2024-original.jpeg">4-12-2024</a>
+          <img src="4-12-2024.jpeg" alt="Image 2: 4-12-2024" />
         </div>
       </section>
 
-      <section id="about" class="section-header">
+      <!-- About Section -->
+      <section id="about" class="section-header section-spacing">
         <h2>About Me</h2>
         <p>
           I am dedicated to providing you with customized workout plans,
@@ -126,7 +151,8 @@
         </p>
       </section>
 
-      <section id="services" class="section-header">
+      <!-- Services Section -->
+      <section id="services" class="section-header section-spacing">
         <h2>My Services</h2>
         <p>
           I offer personalized workout plans, nutrition coaching, progress
@@ -136,33 +162,22 @@
 
         <!-- Option 1 -->
         <section id="option1" class="subsection-header">
-          <p class="bold-text">1 Month Online-Coaching $500</p>
+          <p class="bold-text">1 Month Online-Coaching $350</p>
           <p class="service-option">1. Consultation and fitness assessments</p>
           <p class="service-option">2. Customized Workout Plan</p>
           <p class="service-option">
             3. Personalized Goal-specific Diet and Meal Plan
           </p>
+          <p class="service-option">4. Ongoing progress evaluations</p>
+          <p class="service-option">5. 24/7 google chat support</p>
           <p class="service-option">
-            4. Access to Online Training Videos (in progress)
-          </p>
-          <p class="service-option">5. Ongoing progress evaluations</p>
-          <p class="service-option">6. 24/7 google chat support</p>
-          <p class="service-option">
-            7. 30 minute weekly checkin and progress tracking
+            6. 30-minute weekly check-in and progress tracking
           </p>
         </section>
-
-        <!-- Option 2 -->
-        <!-- <section id="option2" class="subsection-header">
-          <p class="bold-text">Service Options:</p>
-          <p class="service-option">1. Personalized meal plans</p>
-          <p class="service-option">2. Advanced fitness assessments</p>
-          <p class="service-option">3. Goal-specific training programs</p>
-          <p class="service-option">4. Ongoing progress evaluations</p>
-        </section> -->
       </section>
 
-      <section id="contact" class="section-header">
+      <!-- Contact Section -->
+      <section id="contact" class="section-header section-spacing">
         <h2>Contact Me</h2>
         <p>
           Ready to get started? Contact me today to schedule a consultation and
@@ -177,15 +192,18 @@
           <a
             href="mailto:kittphi@gmail.com?subject=Application Inquiry&body=Hello, I'm interested in applying for your program."
             class="btn btn-primary"
-            >Apply Now</a
+            >Contact Me</a
           >
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark text-light py-3">
-      <div class="container">
-        <p>&copy; 2024 Healthy Bulker. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="section-spacing">
+      <div class="bg-dark text-light py-3">
+        <div class="container">
+          <p>&copy; 2024 Healthy Bulker. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 
