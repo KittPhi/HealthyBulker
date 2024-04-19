@@ -18,21 +18,29 @@
 
 .img-container {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.img-container a,
 .img-container img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
+  margin-right: 10px; /* Add margin between images */
+  padding: 5px; /* Add padding around images */
 }
 
-/* Media query for smaller screens */
+/* Make images smaller on larger devices */
 @media (min-width: 768px) {
+  .img-container a,
   .img-container img {
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 
-/* Add margin after the "Contact Me" button */
-#contact {
-  margin-bottom: 50px; /* Adjust the value as needed */
+/* Custom spacing */
+.section-spacing {
+  margin-bottom: 40px;
 }
