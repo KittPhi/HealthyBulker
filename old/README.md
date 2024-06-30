@@ -1,2 +1,2 @@
-# TheHealthyBulker
+# HealthyBulker
 Online Fitness Coach
