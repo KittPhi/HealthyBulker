@@ -1,0 +1,61 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h1>Welcome, <%= user.username %></h1>
+      <% include ./partials/messages %>
+
+      <!-- Form for submitting stats -->
+      <form action="/users/stats" method="POST">
+        <!-- Input fields for stats -->
+        <button type="submit" class="btn btn-primary">Submit Stats</button>
+      </form>
+
+      <!-- Display user stats -->
+      <% if (userStats.length > 0) { %>
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th>Weight</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Body Fat</th>
+            <th>Muscle Fat</th>
+            <th>Created</th>
+            <th>Created Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% userStats.forEach(stat => { %>
+          <tr>
+            <td><%= stat.weight %></td>
+            <td><%= stat.age %></td>
+            <td><%= stat.height %></td>
+            <td><%= stat.bodyFat %></td>
+            <td><%= stat.muscleFat %></td>
+            <td><%= stat.created %></td>
+            <td><%= stat.createdDate %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <% } else { %>
+      <p>No stats available</p>
+      <% } %>
+
+      <!-- Logout link -->
+      <a href="/users/logout" class="btn btn-danger mt-3">Logout</a>
+    </div>
+  </body>
+</html>

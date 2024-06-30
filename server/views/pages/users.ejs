@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/fe14a928d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body class="text-center text-white bg-dark">
+    <%- include('../partials/header') %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div class="container">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thread>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thread>
+            <tbody>
+              <tr>
+                <td>Jack Black</td>
+                <td>JackBlack@gmail.com</td>
+                <td>575-494-7000</td>
+                <td>Date</td>
+                <td>
+                  <a href="" class="text-success"
+                    ><i class="fas fa-edit fa-lg mx-1"></i></a
+                  ><a href="" class="text-danger"
+                    ><i class="fas fa-trash fa-lg mx-1"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <%- include('../partials/footer') %>
+  </body>
+</html>

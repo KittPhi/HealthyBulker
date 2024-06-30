@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+      /* Custom CSS styles */
+      .bold-text {
+        font-weight: bold;
+        font-size: 18px;
+        color: #0069d9;
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .service-option {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .align-left p {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+
+      .subsection-header {
+        margin-top: 40px;
+      }
+
+      .img-container {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .img-container a,
+      .img-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 10px; /* Add margin between images */
+        padding: 5px; /* Add padding around images */
+      }
+
+      /* Make images smaller on larger devices */
+      @media (min-width: 768px) {
+        .img-container a,
+        .img-container img {
+          max-width: 45%;
+        }
+      }
+
+      /* Custom spacing */
+      .section-spacing {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body class="text-center text-white bg-dark">
+    <%- include('../partials/header') %>
+    <h1><%= title %></h1>
+    <p>Welcome to the <%= title %> Program</p>
+    <div>
+      <main class="px-3 container mt-4">
+        <!-- Home Section -->
+        <section id="home" class="section-header section-spacing">
+          <p class="bold-text">
+            Are you a man over 30 who is finding it challenging to build muscle
+            and shed fat?
+          </p>
+          <p>
+            To achieve specific results, it's crucial to understand why you're
+            getting the current results and then correct them by applying the
+            appropriate formula! If you're concerned about suboptimal
+            testosterone or HGH levels, addressing these issues naturally is my
+            top recommendation. I can show you how I optimize my levels. There
+            are five key elements that we must ensure you're incorporating, and
+            by doing so, I can guarantee you'll experience immediate
+            improvements. Not only will you look better, but you'll also feel
+            better. Instead of relying on guesswork, learn from a natural
+            bodybuilder who, at 49 years old, has successfully applied theories
+            and achieved better results than I did when I was 24 years old.
+          </p>
+          <p class="bold-text">
+            Do you have low energy levels and or feel that something is missing?
+            It could be that your dealing with low testosterone and HGH levels.
+          </p>
+          <p>
+            As someone who understands the frustrations of low energy, slow
+            progress, and feeling stuck despite hard work, I'm dedicated to
+            providing personalized coaching that delivers optimal natural
+            results. I will teach you proven methods to increase testosterone
+            and HGH levels naturally, combined with tailored fitness and
+            nutrition plans.
+          </p>
+          <p class="bold-text">
+            Have you tried different diets such as Intermittent Fasting,
+            Carnivore Diet, or Keto without achieving your desired muscle gain?
+          </p>
+          <p>
+            Explore proven methods and theories that I've successfully applied.
+            Benefit from my experiences, learning from both successes and
+            setbacks to reach your fitness goals.
+          </p>
+
+          <p>
+            I will guide you through how I managed to lose 8 lbs of fat and gain
+            14.5 lbs of muscle in just seven weeks. At that time, my goal was to
+            maintain a level of leanness while maximizing muscle gain. Let me
+            share with you how I've consistently achieved these results.
+          </p>
+          <div class="img-container">
+            <a href="images/2-23-2024-original.jpeg">2-23-2024</a>
+            <img src="images/2-23-2024.jpeg" alt="Image 1: 2-23-2024" />
+          </div>
+
+          <div class="img-container">
+            <a href="images/4-12-2024-original.jpeg">4-12-2024</a>
+            <img src="images/4-12-2024.jpeg" alt="Image 2: 4-12-2024" />
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-header section-spacing">
+          <h2>About Me</h2>
+          <p>
+            I'm Kitt Phi, a 49 year old natural body builder. I am a fitness and
+            nutrition coach specializing in helping men over 30 who have
+            experienced the same struggles I have. After years of trial and
+            error, I've discovered effective strategies for gaining muscle,
+            shedding fat, and optimizing hormone levels.
+          </p>
+          <p>
+            My approach combines scientific knowledge, practical experience, and
+            a deep understanding of the challenges faced by men in this age
+            group. Let's work together to unlock your full potential and
+            transform your health and fitness!
+          </p>
+          <p>
+            I am dedicated to providing you with customized workout plans,
+            nutrition guidance, and continuous support to help you reach your
+            full potential.
+          </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-header section-spacing">
+          <h2>My Services</h2>
+          <p>
+            I offer personalized workout plans, nutrition coaching, progress
+            tracking, and 24/7 support to ensure your success on your fitness
+            journey.
+          </p>
+
+          <!-- Option 1 -->
+          <section id="option1" class="subsection-header align-left">
+            <p class="bold-text">1 Month Online-Coaching $500</p>
+            <p class="service-option">
+              1. Consultation and fitness assessments
+            </p>
+            <p class="service-option">2. Customized Workout Plan</p>
+            <p class="service-option">
+              3. Personalized Goal-specific Diet and Meal Plan
+            </p>
+            <p class="service-option">4. Ongoing progress evaluations</p>
+            <p class="service-option">5. 24/7 google chat support</p>
+            <p class="service-option">
+              6. 30-minute weekly check-in and progress tracking
+            </p>
+            <p class="service-option">
+              7. Access Online Training Videos (coming soon)
+            </p>
+          </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-header section-spacing">
+          <h2>Contact Me</h2>
+          <p>
+            Ready to get started? Contact me today to schedule a consultation
+            and take the first step towards a healthier you.
+          </p>
+          <p>
+            Fill out the application form to get started with your fitness
+            journey. I will reach out to schedule a consultation and discuss
+            your goals.
+          </p>
+          <div class="text-center">
+            <a
+              href="mailto:kittphi@gmail.com?subject=Application Inquiry&body=Hello, I'm interested in applying for your program."
+              class="btn btn-primary"
+              >Contact Me</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <%- include('../partials/footer') %>
+  </body>
+</html>

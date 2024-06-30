@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <style>
+      .custom-input {
+        max-width: 400px; /* Adjust the max-width as needed */
+        margin: 0 auto; /* Center the input */
+      }
+    </style>
+  </head>
+  <body class="text-center text-white bg-dark">
+    <%- include('../partials/header') %>
+
+    <h1><%= title %></h1>
+    <%- include('../partials/messages') %>
+    <div class="container">
+      <form class="form-signin row g-3 p-4" action="/login" method="post">
+        <!-- <h2 class="form-signin-heading">Welcome Log In</h2> -->
+        <label for="email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control custom-input"
+          placeholder="Email address"
+          required=""
+        />
+        <label for="password" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control custom-input"
+          placeholder="Password"
+          required=""
+        />
+        <div class="col-md-6 offset-md-3">
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </div>
+        <!-- <p>
+          Don't have an account? <a href="/register">Register</a> ,it's free.
+        </p> -->
+      </form>
+    </div>
+
+    <%- include('../partials/footer') %>
+  </body>
+</html>
